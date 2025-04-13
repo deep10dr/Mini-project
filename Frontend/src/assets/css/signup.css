@@ -1,0 +1,66 @@
+/* Login container styling */
+.login-outer {
+    height: 450px !important;
+    width: 320px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 12px;
+    background-color: #ffffff;
+    padding: 20px;
+}
+
+/* Custom input styling */
+.custom-input {
+    height: 45px;
+    border-radius: 8px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.custom-input:hover {
+    box-shadow: none;
+}
+
+/* Small text styling */
+.small-text {
+    font-size: 13px;
+}
+
+/* Social login button styling */
+.btn-other {
+    border-radius: 50%;
+    color: white;
+    background-color: #343a40;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn-other:hover {
+    background-color: black;
+    color: white;
+}
+
+
+
+/* Small Devices (Tablets) */
+@media screen and (min-width: 401px) and (max-width: 768px) {
+    .login-outer {
+        width: 40%;
+       
+    }
+}
+
+/* Medium Devices (Laptops) */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    .login-outer {
+        width: 40%;
+    }
+}
+
+/* Large Devices (Desktops) */
+@media screen and (min-width: 1025px) {
+    .login-outer {
+        width: 25%;
+    }
+}

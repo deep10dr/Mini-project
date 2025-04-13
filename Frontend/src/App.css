@@ -1,0 +1,8 @@
+.outer-class{
+  background-color: #0c1821;}
+  *{
+    font-family: 'Inter', sans-serif;
+}
+.b{
+  border: 2px solid red;
+}

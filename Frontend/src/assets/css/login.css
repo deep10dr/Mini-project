@@ -1,0 +1,59 @@
+.login-outer {
+    height: 450px !important;
+    width: 310px !important;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 12px;
+    background-color: #ffffff;
+}
+
+.small-text {
+    font-size: 13px;
+}
+
+.btn-other {
+    border-radius: 50%;
+    color: white;
+    background-color: #343a40;
+}
+.btn-other:hover {
+    background-color: black;
+    color: white;
+}
+
+.input-group {
+    height: 45px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 8px 0.4px rgba(0, 0, 0, 0.1) !important;
+    display: flex !important;
+    align-items: center;
+    &:hover{
+        box-shadow: 0px 0px 11px 0.4px rgba(0, 0, 0, 0.1) !important;
+    }
+}
+
+.custom-input {
+    flex: 1 !important;
+    border: none;
+    outline: none;
+    min-width: 0;
+   
+}
+
+.input-group-text {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 40px;
+}
+
+.password-toggle {
+    cursor: pointer;
+    background: transparent;
+    border: none;
+    color: #333;
+}
+span{
+    border: none !important;
+    outline: none !important;
+}

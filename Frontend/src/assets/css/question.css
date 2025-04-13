@@ -1,0 +1,153 @@
+/* Global Font */
+* {
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Chat Messages Container */
+.message-outer-div {
+    height: 80vh !important;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Input Field */
+.input-query {
+    border: none;
+    outline: none;
+    height: 45px;
+    border-radius: 10px;
+    width: 80%;
+    box-shadow: inset 0px 0px 2px 2px rgba(0, 0, 0, 0.2);
+    padding-left: 10px;
+    font-size: 16px;
+}
+
+/* Send Button */
+.btn-send {
+    width: 60px;
+    height: 45px;
+    border: none;
+    box-shadow: 0px 0px 2px 0.3px black;
+    border-radius: 10px;
+    background-color: #007bff;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+
+.btn-send:disabled {
+    background-color: #b0c4de;
+    cursor: not-allowed;
+}
+
+.btn-send:hover {
+    background-color: #0056b3;
+}
+
+/* Question Box */
+.question-outer-div {
+    height: 8vh;
+    border-radius: 10px;
+    box-shadow: 0px 0px 2px 0.3px black;
+    width: 50%;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Message Bubble */
+.message-bubble {
+    padding: 10px 15px;
+    margin: 5px;
+    border-radius: 10px;
+    word-wrap: break-word;
+    display: inline-block;
+    max-width: 75%;
+}
+
+/* User Message (Right-Aligned) */
+.user {
+    align-self: flex-end !important;
+    background-color: #dcf8c6;
+    color: black;
+    border-top-right-radius: 0;
+    text-align: left;
+    width: max-content !important;
+    height: max-content !important;
+}
+
+/* Bot Message (Left-Aligned) */
+.bot {
+    align-self: flex-start !important;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    color: black;
+    border-top-left-radius: 0;
+    text-align: left;
+    width: 30% !important;
+    height: max-content !important;
+}
+
+/* Loader Image */
+.loading-animation {
+    height: 50px;
+    max-width: 100%;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .message-outer-div {
+        width: 90%;
+    }
+
+    .question-outer-div {
+        width: 98%;
+        justify-content: space-between !important;
+    }
+    .bot {
+        width: 80% !important;
+        height: max-content !important;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    .message-outer-div {
+        width: 70%;
+    }
+
+    .question-outer-div {
+        width: 70%;
+    }
+    .bot {
+        width: 70% !important;
+        height: max-content !important;
+    }
+}
+
+@media (min-width: 1025px) {
+    .message-outer-div {
+        width: 40%;
+    }
+
+    .question-outer-div {
+        width: 40%;
+    }
+    .bot {
+        width: 30% !important;
+        height: max-content !important;
+    }
+}
+
+/* Hide Scrollbar for Webkit Browsers (Chrome, Safari) */
+.message-outer-div::-webkit-scrollbar {
+    display: none;
+}
